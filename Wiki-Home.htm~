@@ -1,0 +1,17 @@
+<doctype !html>
+<html>
+<body>
+
+  <style>body {background-color: #b0c4de;}</style>
+
+
+
+<h1>Wiki-Homepage</h1>
+<p>this page would store all the main articles for the wiki</p>
+
+
+<h2>Articles</h2>
+<p>the list of articles would be here</p>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="main-page.css" media="screen" />
+<title>WIKI Site</title>
+</head>
+<html>
+<body>
+    
+<div id='navborder'>
+<div id='main_navbar'>
+  <a href="main-page.htm">Home</a>
+  <a href="Wiki-Home.htm">Wiki</a>
+  <a href="about.txt">About</a>
+</div>
+
+
+<div id='login'>
+  <a href="login-form.htm">Login</a>
+  <small>|</small>
+  <a href="register-form.htm">Register</a>
+</div>
+<br> <br>
+</div> <br>
+
+
+<div id='tempcontent'>
+</br>
+<h1>WIKI SITE</h1>
+<p> This is the version 1.3 of the website for my CS 234 class
+it will include a wiki administered through an SQL database</p>
+<p>This will be primarily a productivity focused wiki with todos and ascossiated pages for studying or whatever I want to do</p>
+
+<h2>TODO</h2>
+<p> >> think about what the default color scheme and other things of the website will look like</p>
+<p> >> research how to create editable pages with php and default file template</p>
+<p> >> Add todo list, maybe have it save to a text file in same directory and then write to char array and then into a para tag?</p>
+<p> >> Think about how you want to implement MySQL database with different features</p>
+
+
+<h3>Tutorials and Links</h3>
+<a href="https://www.mediawiki.org/wiki/Manual:Database_layout"> MediaWiki Database layout </a> <br> <br>
+<a href="https://www.youtube.com/watch?v=7eMsQUQKSvw"> Wiki Tutorial using PHP, it seems that PHP is the only real solution with nothing for JS </a> <br> <br>
+<a href="https://stackoverflow.com/questions/3900791/good-tutorial-on-how-to-build-a-wiki-with-php-mysql"> Great writeup on what would need to be done</a>
+</div>
+
+
+<footer>
+<small>Footer text goes here :3</small> <small>__(made by Shayne T)__</small>
+</footer>
+</body>
+</html>
+
