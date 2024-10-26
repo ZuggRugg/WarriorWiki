@@ -1,41 +1,48 @@
-<doctype !html>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Wiki-Home.css" media="screen" />
+    <title>WIKI Site</title>
+    <link rel="icon" type="img/png" href="/img/icon.png">
+</head>
+
 <html>
 <body>
-
-<style>body{background-color: #b0c4de;} h1, h2{border:3px solid;margin-right:550px;margin-left:550px;border-radius:10px;}
-p{text-align: center;} html{font-size: 20px;font-family: Helvetica, Arial, sans-serif;} #main_navbar{margin-left: 70px;float: left;} #main_navbar a {margin-left: 20px; color: white;}
-
-#navborder {
-  position: fixed;
-  margin-left: -8px;
-  top: -1px;
-  bottom: 890px;
-  width: 100%;
-  align-items: center;
-  background-color: black;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  z-index: 1;
-}
-</style>
     
+
+<!-- NAVBAR -->
 <div id='navborder'>
-<div id='main_navbar'>
-  <a href="main-page.htm">Home</a>
-  <a href="Wiki-Home.htm">Wiki</a>
-  <a href="#about">About</a>
+   <div id='main_navbar'>
+      <a href="main-page.htm">Home</a>
+      <a href="Wiki-Home.htm">Wiki</a>
+      <a href="about.htm">About</a>
+   </div>
 </div>
 
+
+<!--  TODO LIST  -->
 <br><br>
-<h1>Wiki-Homepage</h1>
+<h1>TODO</h1>
+<p>>> Fix up the CSS and get it into its own seperate sheet</p>
+<p>>> fix up Navbar and link the login and Register pages to it</p>
+<p>>> maybe add sidebar and need php to display article links in y</p>
+<p>>> maybe no footer?</p>
+
+
+<!-- general ideas -->
+<h2>Wiki-Homepage</h2>
 <p>this page would store all the main articles for the wiki</p>
 <p>maybe one day include a fancy search function to find articles in the wiki</p>
+<p>display already created articles and push link onto page for newly created page in the database </p>
+<p>maybe a button for admin users to delete articles from this page</p>
 
 
-<h2>Articles</h2>
-<p>the list of articles would be here</p>
-<p>maybe a table or grid of articles are categorized by namespace or something </p>
+<!-- Footer -->
+<footer>
+<small>Footer text goes here :D</small>
+</footer>
 
 </body>
 </html>
+

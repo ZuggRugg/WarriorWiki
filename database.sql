@@ -1,0 +1,9 @@
+CREATE DATABASE registration NOT NULL;
+
+
+CREATE TABLE users NOT NULL
+(
+id INT NOT NULL,
+username VARCHAR(30) NOT NULL,
+password VARCHAR(30) NOT NULL;
+);
