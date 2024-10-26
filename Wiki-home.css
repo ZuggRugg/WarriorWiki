@@ -1,0 +1,39 @@
+body{background-color: #f9ecdf;}
+
+h1, h2{border:3px solid; text-align: center; margin-right:550px; margin-left:550px; border-radius:10px;}
+
+p{text-align: center;}
+
+html{font-size: 20px;font-family: Helvetica, Arial, sans-serif;} #main_navbar{margin-left: 70px;float: left;}
+
+#main_navbar a {margin-left: 20px; color: white;}
+
+#navborder {
+  position: fixed;
+  margin-left: -8px;
+  padding: 30px;
+  top: -1px;
+  bottom: 890px;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  z-index: 1;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    position: fixed;
+    margin-top: 250px;
+    left: 0;
+    flex-grow: 1;
+    width: 100%;
+    top: 635px;
+}
