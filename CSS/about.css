@@ -1,0 +1,43 @@
+ body {background-color: #f9ecdf; font-size: 21px; font-family: Helvetica, Arial, sans-serif;}
+
+ p {text-align: center;} 
+
+ h1 {text-align: center;}
+
+ #main_navbar a {margin-left: 20px; color: white;}
+ #login a  {margin-left: 2px; color: white;}
+
+ #login {margin-left: 1250px; float: left; color: white; margin-top: 18px;} 
+ #login small {font-size:21px;}
+
+#main_navbar {margin-left: 70px;float: left;}
+
+
+#navborder {
+    position: fixed;
+    margin-left: -8px;
+    padding: 6px;
+    top: -1px;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    z-index: 1;
+}
+
+ footer {
+     background-color: black;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	position: fixed;
+	margin-top: 250px;
+	left: 0;
+	flex-grow: 1;
+	width: 100%;
+	top: 630px;
+    }
