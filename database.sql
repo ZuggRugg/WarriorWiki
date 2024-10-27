@@ -1,9 +1,16 @@
-CREATE DATABASE registration NOT NULL;
+CREATE DATABASE main NOT NULL;
 
-
-CREATE TABLE users NOT NULL
-(
-id INT NOT NULL,
+CREATE TABLE users (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 username VARCHAR(30) NOT NULL,
-password VARCHAR(30) NOT NULL;
-);
+password VARCHAR(30) NOT NULL,
+permissions BIT
+) ENGINE = 'innoDB' DEFAULT;
+
+
+CREATE TABLE articles (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+article_title BLOB;
+article_content BLOB;
+) ENGINE = 'innoDB' DEFAULT;
+
