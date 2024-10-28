@@ -4,9 +4,19 @@ h1, h2{border:3px solid; text-align: center; margin-right:550px; margin-left:550
 
 p{text-align: center;}
 
-html{font-size: 20px;font-family: Helvetica, Arial, sans-serif;} #main_navbar{margin-left: 70px;float: left;}
+html{font-size: 20px;font-family: monospace;} 
+
+#main_navbar {margin-left: 70px;float: left; margin-top: -20px;}
 
 #main_navbar a {margin-left: 20px; color: white;}
+
+#login a  {margin-left: 2px; color: white;}
+
+#login {margin-left: 1250px; float: left; color: white; }
+#login small {font-size:21px;}
+
+#todo {text-align: center; ;}
+ul.centerList {display: inline-block; text-align: left; color: black;}
 
 #navborder {
   position: fixed;
@@ -16,7 +26,7 @@ html{font-size: 20px;font-family: Helvetica, Arial, sans-serif;} #main_navbar{ma
   bottom: 890px;
   width: 100%;
   align-items: center;
-  background-color: black;
+  background-color:  #3d3d3d;
   justify-content: space-between;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -24,7 +34,7 @@ html{font-size: 20px;font-family: Helvetica, Arial, sans-serif;} #main_navbar{ma
 }
 
 footer {
-    background-color: black;
+    background-color:  #3d3d3d;
     color: white;
     text-align: center;
     padding: 12px;
