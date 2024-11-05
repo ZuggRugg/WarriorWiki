@@ -18,7 +18,7 @@
 	<input type='button' value='login' id='loginButton'>
 	<br><br>
 	<a href="main-page.htm"> Go back </a>
-	<p>Dont Have an Account? Register here. <a href="register-form.htm"> Register-Form </a> </p>
+	<p>Dont Have an Account? Register here. <a href="register-form.php"> Register-Form </a> </p>
        
      </div>
 

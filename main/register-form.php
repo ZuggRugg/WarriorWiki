@@ -17,8 +17,8 @@
 	<input type="text" value="Password" id='uRPassword'> <br> <br>
 	<input type='button' value='login' id='registerButton'>
 	<br><br>
-	<a href="main-page.htm"> Go back </a>
-	<p>Already Have an Account? Login here. <a href="login-form.htm"> Login-Form </a> </p>
+	<a href="main-page.php"> Go back </a>
+	<p>Already Have an Account? Login here. <a href="login-form.php"> Login-Form </a> </p>
        
      </div>
 

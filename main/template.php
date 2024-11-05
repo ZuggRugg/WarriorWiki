@@ -21,15 +21,15 @@ footer {background-color: #3d3d3d;color: white;text-align: center;padding: 12px;
 <div id='navborder'>
    <div id='main_navbar'>
         <img src="../img/icon.png" alt="logo" width="40" height="40"> 
-        <a href="main-page.htm">Home</a>
-        <a href="Wiki-Home.htm">Wiki</a>
-        <a href="about.htm">About</a>
+        <a href="main-page.php">Home</a>
+        <a href="Wiki-Home.php">Wiki</a>
+        <a href="about.php">About</a>
    </div>
 
      <div id='login'>
-         <a href="login-form.htm">Login</a>
+         <a href="login-form.php">Login</a>
          <small>|</small>
-	  <a href="register-form.htm">Register</a>
+	  <a href="register-form.php">Register</a>
     </div> 
 </div> <br>
 

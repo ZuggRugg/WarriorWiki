@@ -2,15 +2,23 @@ CREATE DATABASE main NOT NULL;
 
 CREATE TABLE users (
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-username VARCHAR(30) NOT NULL,
-password VARCHAR(30) NOT NULL,
+username VARCHAR(50) NOT NULL,
+password VARCHAR(255) NOT NULL,
 permissions BIT
 ) ENGINE = 'innoDB' DEFAULT;
 
 
 CREATE TABLE articles (
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
-article_title BLOB;
-article_content BLOB;
+article_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+article_title VARCHAR(70),
+article_content MEDIUMBLOB,
+tags VARCHAR(50)
+) ENGINE = 'innoDB' DEFAULT;
+
+
+CREATE TABLE tags (
+tag_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+tag_name VARCHAR(50),
+FOREIGN KEY (tags) REFERENCES tags(tag_name)
 ) ENGINE = 'innoDB' DEFAULT;
 
