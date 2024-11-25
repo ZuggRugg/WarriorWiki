@@ -12,18 +12,22 @@
     
 
      <div id='main'>
-       <h1>Login Form</h1>
-       <input type="text" value="Username" id='usernameForm'> <br> <br>
-	<input type="text" value="Password" id='usernamePassword'> <br> <br>
-	<input type='button' value='login' id='loginButton'>
-	<br><br>
-	<a href="main-page.htm"> Go back </a>
-	<p>Dont Have an Account? Register here. <a href="register-form.php"> Register-Form </a> </p>
-       
+      <h1>Login Form</h1>
+      <form action="authenticate.php" method="POST">
+	     <label for="username">
+	     <i class="fas fa-user"></i>
+	     </label>
+            <input type="text" name="username" placeholder="Username" id='usernameForm' required> <br> <br>
+	     <label for="password">
+	     <i class="fas fa-lock"></i>
+	     </label>
+	     <input type="text" name="password" placeholder="Password" id='usernamePassword' required> <br> <br>
+	     <input type='submit' value='login' id='loginButton'>
+	     <br><br>
+	     <a href="main-page.php"> Go back </a>
+	     <p>Dont Have an Account? Register here. <a href="register-form.php"> Register-Form </a> </p>
+	 </form>
      </div>
-
-
-
 
 
 </body>

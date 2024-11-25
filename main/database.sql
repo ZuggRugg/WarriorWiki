@@ -1,4 +1,5 @@
-CREATE DATABASE main NOT NULL;
+CREATE DATABASE IF NOT EXISTS main;
+
 
 CREATE TABLE users (
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -17,8 +18,12 @@ tags VARCHAR(50)
 
 
 CREATE TABLE tags (
-tag_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+tag_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 tag_name VARCHAR(50),
 FOREIGN KEY (tags) REFERENCES tags(tag_name)
 ) ENGINE = 'innoDB' DEFAULT;
 
+
+INSERT INTO users (id, username, password, permissions) 
+(1, "Administrator", "password", 1),
+(2, "Shayne", "password", 0);

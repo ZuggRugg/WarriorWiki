@@ -1,5 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+ <?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=main", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";}
+ catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();}
+  $username = $_SESSION['username'];
+ ?> 
 
 <head>
     <meta charset="utf-8" />
@@ -11,15 +27,14 @@
 
 <html>
 <body>
-
-    
+ 
 <!-- Header/Navigation Bar -->
 <div id='navborder'>
    <div id='main_navbar'>
         <img src="../img/icon.png" alt="logo" width="40" height="40"> 
         <a href="main-page.php">Home</a>
         <a href="Wiki-Home.php">Wiki</a>
-        <a href="about.php">About</a>
+        <a href="about.php">New Page</a>
    </div>
 
      <div id='login'>
@@ -42,7 +57,6 @@
    <ul class='centerList'>
 	<li>##DONE##  homogenize CSS across web-pages to give same look</li>
 	<li>##DO NEXT## add login and register Backend for the MySql Database</li>
-	<li>think about what the default color scheme and other things of the website will look like</li>
 	<li>Store article contents in Mysql or in .txt file your choice</li>
 	<li>figure out how to implement markdown langauge or image viewer</li>
 	<li>##JS OR TS## maybe add more formats for studying like notecards and timers to add to the theme of the repo</li>
