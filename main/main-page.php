@@ -2,20 +2,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
- <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=main", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";}
- catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();}
-  $username = $_SESSION['username'];
- ?> 
 
 <head>
     <meta charset="utf-8" />
@@ -42,7 +28,26 @@ try {
          <small>|</small>
 	  <a href="register-form.php">Register</a>
     </div> 
-</div> <br>
+</div> <br><br>
+
+<!-- login to database -->
+<p>
+ <?php
+session_start();
+$servername = "localhost";
+$username = "root";
+$password = "root";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=main", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";}
+  catch(PDOException $e) {echo "Connection failed: " . $e->getMessage();}
+  $username = $_SESSION['username'];
+?> 
+</p>
+
 
 <div id='tempcontent'>
 </br> 
