@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+ if (!isset($_SESSION['username'])) {
+     header('location: login-form.php');
+ }
+   
+ if (isset($_GET['logout'])) {
+     $_GET["logout.php"];
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -21,19 +33,29 @@
      <a href="login-form.php">Login</a>
      <small>|</small>
      <a href="register-form.php">Register</a>
+     <small>|</small>
+     <a href="logout.php">Log Out</a>
    </div> 
-</div> <br>
+</div> <br> <br>
 
 
 <!-- main content -->
-<h1>COOONTENT</h1>
-<ul class="myList">
-  <li>Description of Project</li>
-  <li>maybe have tutorial to use wiki here as well</li>
-  <li>idk If I even want this page but it should act as a good template if I need it</li>
-  <li>maybe structure this page with images and flexbox for practice :) </li>
-  <li></li>
-</ul>
+<h1>Create New Article</h1>
+<p>create a new article here</p> <br>
+
+ <form action="create-page.php">
+  <label for="title">Title</label>
+  <input type="text" id="title-name" name="title-name"><br><br>
+  <label for="article-contents">article-contents</label>
+  <textarea rows="5" cols="80" id="article"></textarea>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
+
+
+
 
 <footer>it work :D </footer>
 

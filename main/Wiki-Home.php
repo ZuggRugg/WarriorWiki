@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+ if (!isset($_SESSION['username'])) {
+     header('location: login-form.php');
+ }
+   
+ if (isset($_GET['logout'])) {
+     $_GET["logout.php"];
+ }
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +37,8 @@
          <a href="login-form.php">Login</a>
          <small>|</small>
 	  <a href="register-form.php">Register</a>
+     <small>|</small>
+     <a href="logout.php">Log Out</a>
     </div> 
 </div> 
 
