@@ -13,7 +13,7 @@
 
      <div id='main'>
        <h1>Register Form</h1>
-          <form action="register.php" method="post">
+          <form action="registration.php" method="post">
 	      <label for="username">
 	      <i class="fas fa-user"></i>
 	      </label>     

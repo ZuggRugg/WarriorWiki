@@ -1,3 +1,11 @@
+<?php
+session_start();
+   
+ if (!isset($_SESSION['username'])) {
+     header('location: login-form.php');
+ }
+
+?>
 
 <!DOCTYPE html>
 <html lang="en-US">
@@ -21,6 +29,7 @@
         <a href="main-page.php">Home</a>
         <a href="Wiki-Home.php">Wiki</a>
         <a href="about.php">New Page</a>
+
    </div>
 
      <div id='login'>
