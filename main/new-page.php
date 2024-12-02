@@ -15,7 +15,7 @@ session_start();
 
 <head>
   <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="../CSS/about.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/new-page.css" media="screen" />
     <title>WIKI Site</title>
     <link rel="icon" type="img/png" href="../img/icon.png">
 </head>

@@ -30,7 +30,7 @@ session_start();
       <img src="../img/icon.png" alt="logo" width="40" height="40">
       <a href="main-page.php">Home</a>
       <a href="Wiki-Home.php">Wiki</a>
-      <a href="about.php">About</a>
+      <a href="new-page.php">About</a>
    </div>
 
      <div id='login'>
