@@ -40,7 +40,7 @@ session_start();
          <small>|</small>
      <a href="logout.php">Log Out</a>
     </div> 
-</div> <br><br>
+</div> <br>
 
 <!-- login to database -->
 <p>
@@ -63,7 +63,7 @@ try {
 <div id='tempcontent'>
 </br> 
 <h1>WIKI SITE</h1>
-<p> This is the version 1.6 of the website for my CS 234 class it will include a wiki administered through an SQL database</p>
+<p> This is the version 1.8 of the website for my CS 234 class it will include a wiki administered through an SQL database</p>
 <p>This will be primarily a productivity focused wiki with todos and ascossiated pages for studying or whatever I want to do</p>
 
 
@@ -73,7 +73,7 @@ try {
    <ul class='centerList'>
 	<li>##DONE##  homogenize CSS across web-pages to give same look</li>
 	<li>##DONE## add login and register Backend for the MySql Database</li>
-	<li>Store article contents in Mysql or in .txt file your choice</li>
+	<li>##IN-PROGRESS## Store article contents in Mysql or in .txt file your choice</li>
 	<li>figure out how to implement markdown langauge or image viewer</li>
 	<li>##JS OR TS## maybe add more formats for studying like notecards and timers to add to the theme of the repo</li>
    </ul>
@@ -102,7 +102,7 @@ try {
 
 <!-- Footer -->
 <footer>
-	<small>Footer text goes here :D</small>
+	<small>Made by Shayne Tieman :D</small>
 </footer>
 
 <script></script>

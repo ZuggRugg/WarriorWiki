@@ -26,7 +26,7 @@ session_start();
       <img src="../img/icon.png" alt="logo" width="40" height="40"> 
       <a href="main-page.php">Home</a>
       <a href="Wiki-Home.php">Wiki</a>
-      <a href="about.php">About</a>
+      <a href="new-page.php">New Page</a>
    </div>
 
    <div id='login'>
@@ -44,20 +44,16 @@ session_start();
 <p>create a new article here</p> <br>
 
  <form action="create-page.php">
-  <label for="title">Title</label>
+  <label for="title">title</label>
   <input type="text" id="title-name" name="title-name"><br><br>
   <label for="article-contents">article-contents</label>
   <textarea rows="5" cols="80" id="article"></textarea>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" id="submit">
 </form> 
 
 
 
-
-
-
-
-<footer>it work :D </footer>
+<footer>Made by Shayne Tieman</footer>
 
 </body>
 </html>
