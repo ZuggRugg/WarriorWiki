@@ -37,6 +37,17 @@ CREATE TABLE `articles` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tags`
+--
+
+CREATE TABLE `tags` ( 
+  `tag_id` int(11) NOT NULL,
+  `tags` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+-----------------------------------------------------------
+
+--
 -- Table structure for table `registration`
 --
 

@@ -8,6 +8,11 @@ session_start();
  if (isset($_GET['logout'])) {
      $_GET["logout.php"];
  }
+
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
  ?>
 
 <!DOCTYPE html>
@@ -52,6 +57,12 @@ session_start();
 <p>maybe one day include a fancy search function to find articles in the wiki</p>
 <p>display already created articles and push link onto page for newly created page in the database </p>
 <p>button for admin users to delete articles from this page and edit from this page</p>
+<br> <br>
+
+
+
+ <p> <?php require "list-articles.php" ?> </p>
+
 
 
 <!-- Footer -->

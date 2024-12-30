@@ -16,6 +16,7 @@ p{text-align: center; color: black;}
 #todo {text-align: center; ;}
 ul.centerList {display: inline-block; text-align: left; color: black;}
 
+
 #navborder {
     position: fixed;
     margin-left: -8px;

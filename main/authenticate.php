@@ -6,7 +6,7 @@
 
   function hash_and_check($username, $password) {
         global $pdo; 
-        $sql = "SELECT password FROM users WHERE username = ?";
+        $sql = "SELECT password FROM registration WHERE username = ?";
         $statement = $pdo->prepare($sql);
         $statement->execute([$username]);
 
@@ -14,10 +14,8 @@
         $passwordinfo = $info[0];
 
         if(!$info) {return "false";}
-        $hashed_password = password_hash($passwordinfo, PASSWORD_BCRYPT);
-        echo "$hashed_password";
 
-        if(password_verify($password, $hashed_password)) {return "correct";} 
+        if(password_verify($password, $passwordinfo)) {return "correct";} 
         else {return "false";}
     }
 
@@ -26,7 +24,7 @@
         $password = $_POST["password"];
 
         try {
-            $pdo = new PDO("mysql:host=localhost;dbname=main", "root", "root");
+            $pdo = new PDO("mysql:host=localhost;dbname=project", "root", "root");
             // set the PDO error mode to exception
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);}
         catch(PDOException $e) {echo "Connection failed: " . $e->getMessage();}
@@ -34,10 +32,10 @@
              $result = hash_and_check($username, $password);
 
              if($result == "false") { header("location: register-form.php"); } 
-       
+             
              else if ($result == "correct") {
-             $_SESSION["username"] = $username;
-             header("location: main-page.php");
+                 $_SESSION["username"] = $username;
+                 header("location: main-page.php");
        	    } 
 }
 

@@ -43,11 +43,11 @@ session_start();
 <h1>Create New Article</h1>
 <p>create a new article here</p> <br>
 
- <form action="create-page.php">
+  <form action="create-page.php" method="post">
   <label for="title">title</label>
   <input type="text" id="title-name" name="title-name"><br><br>
   <label for="article-contents">article-contents</label>
-  <textarea rows="5" cols="80" id="article"></textarea>
+  <input type ="text" id="article-contents" name="article-contents"> <br>
   <input type="submit" value="Submit" id="submit">
 </form> 
 

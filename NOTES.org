@@ -1,0 +1,14 @@
+* NOTES
+- have notes stored both in database and in text file
+- anything else is way to fucking hard
+- test on making input field bigger when both editing and creating pages
+- "<textarea rows="5" cols="80" id="TITLE"></textarea>"
+
+
+- add buttons to delete or edit page from wiki home
+- button to create page would just link back to the new-page.php
+
+- edit page would be like the create page except with the current title and contents from database echoed into the input fields.
+
+
+-some type of javascript to render org or markdown for contents.
